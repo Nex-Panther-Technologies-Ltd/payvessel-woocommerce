@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Payvessel Payment Gateway for WooCommerce
+ * Plugin Name: Payvessel – Payment Gateway for WooCommerce
  * Plugin URI: https://payvessel.com
  * Description: Accept payments via Bank Transfer and Card using Payvessel Payment Gateway. Supports WooCommerce Block Checkout, popup modal, and webhook notifications.
  * Version: 1.0.0
- * Author: Nex Panther Technologies Ltd
+ * Author: Payvessel
  * Author URI: https://payvessel.com
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt

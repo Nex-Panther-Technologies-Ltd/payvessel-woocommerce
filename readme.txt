@@ -1,4 +1,4 @@
-=== Payvessel WooCommerce Payment Gateway ===
+=== Payvessel – Payment Gateway for WooCommerce ===
 Contributors: payvessel
 Tags: woocommerce, payment gateway, payvessel, credit card, bank transfer, ussd, nigeria
 Requires at least: 5.6
