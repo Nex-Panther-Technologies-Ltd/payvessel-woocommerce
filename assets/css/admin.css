@@ -1,0 +1,213 @@
+/**
+ * Payvessel WooCommerce Admin Styles
+ */
+
+/* Transactions page */
+.payvessel-admin-wrap {
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.payvessel-admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payvessel-admin-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payvessel-admin-header h1 img {
+    height: 30px;
+}
+
+/* Stats cards */
+.payvessel-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.payvessel-stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.payvessel-stat-card h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.payvessel-stat-card .value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.payvessel-stat-card.success .value {
+    color: #28a745;
+}
+
+.payvessel-stat-card.pending .value {
+    color: #ffc107;
+}
+
+.payvessel-stat-card.failed .value {
+    color: #dc3545;
+}
+
+/* Filters */
+.payvessel-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.payvessel-filters select {
+    min-width: 150px;
+}
+
+.payvessel-filters .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Transactions table */
+#payvessel-transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#payvessel-transactions-table th,
+#payvessel-transactions-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#payvessel-transactions-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #333;
+}
+
+#payvessel-transactions-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+#payvessel-transactions-table a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+#payvessel-transactions-table a:hover {
+    text-decoration: underline;
+}
+
+/* Order status badges */
+.order-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.order-status.status-completed,
+.order-status.status-processing {
+    background: #c6e1c6;
+    color: #5b841b;
+}
+
+.order-status.status-pending,
+.order-status.status-on-hold {
+    background: #f8dda7;
+    color: #94660c;
+}
+
+.order-status.status-failed,
+.order-status.status-cancelled {
+    background: #eba3a3;
+    color: #761919;
+}
+
+.order-status.status-refunded {
+    background: #ccd;
+    color: #555;
+}
+
+/* Pagination */
+.payvessel-pagination {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.payvessel-pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    background: #f0f0f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+}
+
+.payvessel-pagination a:hover,
+.payvessel-pagination a.current {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+}
+
+/* Settings page enhancements */
+.woocommerce_page_wc-settings #mainform h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payvessel-settings-logo {
+    height: 25px;
+    width: auto;
+}
+
+/* Test mode notice */
+.payvessel-test-mode-notice {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.payvessel-test-mode-notice strong {
+    color: #856404;
+}
+
+/* Webhook URL box */
+.payvessel-webhook-url {
+    background: #f0f0f1;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-family: monospace;
+    word-break: break-all;
+    margin: 10px 0;
+}
+
+.payvessel-copy-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}

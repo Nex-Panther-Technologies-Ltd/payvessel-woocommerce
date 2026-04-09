@@ -1,0 +1,113 @@
+/**
+ * Payvessel WooCommerce Checkout Styles
+ */
+
+/* Payment method icon */
+.payment_method_payvessel img {
+    max-height: 30px;
+    width: auto;
+}
+
+/* Popup checkout container */
+.payvessel-popup-checkout {
+    padding: 20px;
+    text-align: center;
+}
+
+.payvessel-popup-checkout .payvessel-pay-button {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payvessel-popup-checkout .payvessel-pay-button:hover {
+    background-color: #e55f00;
+}
+
+.payvessel-popup-checkout .payvessel-pay-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Loading spinner */
+.payvessel-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #ff6b00;
+    border-radius: 50%;
+    animation: payvessel-spin 1s linear infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes payvessel-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Order details on thank you page */
+.payvessel-transaction-details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.payvessel-transaction-details h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.payvessel-transaction-details table {
+    width: 100%;
+}
+
+.payvessel-transaction-details table td {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.payvessel-transaction-details table td:first-child {
+    font-weight: 600;
+    color: #666;
+}
+
+/* Checkout form styling */
+.payment_box.payment_method_payvessel {
+    background-color: #f9f9f9 !important;
+}
+
+.payment_box.payment_method_payvessel p {
+    color: #555;
+}
+
+/* Payment channels badges */
+.payvessel-channels {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payvessel-channel-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #555;
+}
+
+.payvessel-channel-badge svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
